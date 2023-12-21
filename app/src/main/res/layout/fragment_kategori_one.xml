@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="kategoriOneVM" type="com.paniroisapplication.app.modules.kategorione.data.viewmodel.KategoriOneVM"/>
+    </data>
+    <LinearLayout android:gravity="end"
+        android:id="@+id/linearColumnarrowdown"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_14pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar
+            android:gravity="center_horizontal"
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_15pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout android:id="@+id/linearRowarrowdown"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageArrowdown"
+                    android:layout_height="@dimen/_14pxh"
+                    android:layout_marginBottom="@dimen/_13pxv"
+                    android:layout_marginTop="@dimen/_11pxv"
+                    android:layout_width="@dimen/_20pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_arrowdown"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_arrowdown"/>
+                <LinearLayout android:id="@+id/linearSearch"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_17pxh"
+                    android:layout_weight="0.93"
+                    android:layout_width="0dp"
+                    android:orientation="horizontal" style="@style/groupStylewhite_1">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtSearch"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_7pxv"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_marginTop="@dimen/_11pxv"
+                        android:layout_weight="0.71"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{kategoriOneVM.kategoriOneModel.txtSearch}"
+                        style="@style/txtInterregular16" tools:text="@string/lbl_cari_di_fruvego"/>
+                    <ImageView android:id="@+id/imageSearchOne"
+                        android:layout_height="@dimen/_39pxh"
+                        android:layout_marginStart="@dimen/_109pxh"
+                        android:layout_width="@dimen/_46pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_search_green_a700"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_search_green_a700"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout android:gravity="end"
+            android:id="@+id/linearColumnberdasarkantok"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_15pxh"
+            android:layout_marginTop="@dimen/_18pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <HorizontalScrollView android:fillViewport="true"
+                android:gravity="start"
+                android:id="@+id/horizontalScrollHorizontalscrolltelevision"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:scrollbars="none">
+                <LinearLayout android:id="@+id/linearRowtelevision"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" android:orientation="horizontal">
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearColumntelevision"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp" android:orientation="vertical">
+                        <ImageButton
+                            android:background="@drawable/rectangle_bg_cyan_a700_c1_radius_10"
+                            android:id="@+id/btnTelevision"
+                            android:layout_height="@dimen/_58pxh"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_marginStart="@dimen/_1pxh"
+                            android:layout_width="@dimen/_58pxh"
+                            android:paddingHorizontal="@dimen/_8pxh"
+                            android:paddingVertical="@dimen/_8pxv"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_television_58x58" tools:ignore="ContentDescription"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtLokasiTerdekat"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_6pxv"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{kategoriOneVM.kategoriOneModel.txtLokasiTerdekat}"
+                            style="@style/txtInterregular8" tools:text="@string/lbl_lokasi_terdekat"/>
+                    </LinearLayout>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtBerdasarkanTok"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_65pxv"
+                        android:layout_weight="0.08"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{kategoriOneVM.kategoriOneModel.txtBerdasarkanTok}"
+                        style="@style/txtInterregular8" tools:text="@string/msg_berdasarkan_tok"/>
+                    <LinearLayout android:gravity="center_horizontal"
+                        android:id="@+id/linearProdukpaketan"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_weight="0.22"
+                        android:layout_width="0dp" android:orientation="vertical">
+                        <ImageButton
+                            android:background="@drawable/rectangle_bg_light_green_a200_b2_radius_10"
+                            android:id="@+id/btnGroup36719"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="@dimen/_58pxh"
+                            android:layout_marginEnd="@dimen/_1pxh"
+                            android:layout_marginStart="@dimen/_1pxh"
+                            android:layout_width="@dimen/_58pxh"
+                            android:paddingHorizontal="@dimen/_12pxh"
+                            android:paddingVertical="@dimen/_12pxv"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_group36719_4" tools:ignore="ContentDescription"/>
+                        <TextView android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:id="@+id/txtProdukPaketan"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_1pxh"
+                            android:layout_marginTop="@dimen/_6pxv"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{kategoriOneVM.kategoriOneModel.txtProdukPaketan}"
+                            style="@style/txtInterregular8" tools:text="@string/lbl_produk_paketan"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_horizontal"
+                        android:id="@+id/linearColumngroup36719One"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_1pxv"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_weight="0.22"
+                        android:layout_width="0dp" android:orientation="vertical">
+                        <ImageButton
+                            android:background="@drawable/rectangle_bg_lime_500_c1_radius_10"
+                            android:id="@+id/btnGroup36719One"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="@dimen/_58pxh"
+                            android:layout_marginEnd="@dimen/_1pxh"
+                            android:layout_width="@dimen/_58pxh"
+                            android:paddingHorizontal="@dimen/_11pxh"
+                            android:paddingVertical="@dimen/_11pxv"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_group36719_58x58" tools:ignore="ContentDescription"/>
+                        <TextView android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:id="@+id/txtPromoDiskon"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_1pxh"
+                            android:layout_marginTop="@dimen/_6pxv"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{kategoriOneVM.kategoriOneModel.txtPromoDiskon}"
+                            style="@style/txtInterregular8" tools:text="@string/lbl_promo_diskon"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_horizontal"
+                        android:id="@+id/linearColumngroup36719Two"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_17pxh"
+                        android:layout_weight="0.22"
+                        android:layout_width="0dp" android:orientation="vertical">
+                        <LinearLayout android:gravity="start"
+                            android:id="@+id/linearRowgroup36719Two"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <ImageButton
+                                android:background="@drawable/rectangle_bg_deep_purple_a200_b2_radius_10"
+                                android:id="@+id/btnGroup36719Two"
+                                android:layout_height="@dimen/_58pxh"
+                                android:layout_width="@dimen/_58pxh"
+                                android:paddingHorizontal="@dimen/_13pxh"
+                                android:paddingVertical="@dimen/_13pxv"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/img_group36719_5" tools:ignore="ContentDescription"/>
+                            <ImageButton
+                                android:background="@drawable/rectangle_bg_green_a200_b2_radius_10"
+                                android:id="@+id/btnGroup36719Three"
+                                android:layout_height="@dimen/_58pxh"
+                                android:layout_marginStart="@dimen/_186pxh"
+                                android:layout_width="@dimen/_58pxh"
+                                android:paddingHorizontal="@dimen/_8pxh"
+                                android:paddingVertical="@dimen/_8pxv"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/img_group36719_2" tools:ignore="ContentDescription"/>
+                        </LinearLayout>
+                        <TextView android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:id="@+id/txtBeliLagi"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_13pxh"
+                            android:layout_marginStart="@dimen/_13pxh"
+                            android:layout_marginTop="@dimen/_7pxv"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{kategoriOneVM.kategoriOneModel.txtBeliLagi}"
+                            style="@style/txtInterregular8" tools:text="@string/lbl_beli_lagi"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearColumngroup36719Four"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_2pxh"
+                        android:layout_marginStart="@dimen/_18pxh"
+                        android:layout_weight="0.25"
+                        android:layout_width="0dp" android:orientation="vertical">
+                        <ImageButton
+                            android:background="@drawable/rectangle_bg_blue_700_c1_radius_10"
+                            android:id="@+id/btnGroup36719Four"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="@dimen/_58pxh"
+                            android:layout_marginEnd="@dimen/_4pxh"
+                            android:layout_marginStart="@dimen/_2pxh"
+                            android:layout_width="@dimen/_58pxh"
+                            android:paddingHorizontal="@dimen/_11pxh"
+                            android:paddingVertical="@dimen/_11pxv"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/img_group36719_3" tools:ignore="ContentDescription"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtPenjualanTerba"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_7pxv"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{kategoriOneVM.kategoriOneModel.txtPenjualanTerba}"
+                            style="@style/txtInterregular8" tools:text="@string/msg_penjualan_terba"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerKategoriOne"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_4pxh"
+                android:layout_marginStart="@dimen/_20pxh"
+                android:layout_marginTop="@dimen/_23pxv"
+                android:layout_width="match_parent"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="2" itemSpace="@{@dimen/_20pxh}"
+                tools:itemCount="6" tools:listitem="@layout/row_kategori_one"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

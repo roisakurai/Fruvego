@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="pencarianRowModel" type="com.paniroisapplication.app.modules.pencarian.data.model.PencarianRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowgroup36707"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtGroup36707"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25" android:layout_width="0dp"
+            android:paddingBottom="@dimen/_4pxv"
+            android:paddingEnd="@dimen/_16pxh"
+            android:paddingStart="@dimen/_17pxh"
+            android:paddingTop="@dimen/_6pxv" android:singleLine="true"
+            android:text="@{pencarianRowModel.txtGroup36707}"
+            style="@style/txtRoundedOutline" tools:text="@string/lbl_pepaya"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtGroup36708"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_7pxh"
+            android:layout_weight="0.25" android:layout_width="0dp"
+            android:paddingBottom="@dimen/_5pxv"
+            android:paddingEnd="@dimen/_19pxh"
+            android:paddingStart="@dimen/_19pxh"
+            android:paddingTop="@dimen/_5pxv" android:singleLine="true"
+            android:text="@{pencarianRowModel.txtGroup36708}"
+            style="@style/txtRoundedOutline" tools:text="@string/lbl_tomat"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtGroup36709"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_7pxh"
+            android:layout_weight="0.25" android:layout_width="0dp"
+            android:paddingBottom="@dimen/_4pxv"
+            android:paddingEnd="@dimen/_18pxh"
+            android:paddingStart="@dimen/_18pxh"
+            android:paddingTop="@dimen/_6pxv" android:singleLine="true"
+            android:text="@{pencarianRowModel.txtGroup36709}"
+            style="@style/txtRoundedOutline" tools:text="@string/lbl_bayam"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtGroup36710"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_7pxh"
+            android:layout_weight="0.25" android:layout_width="0dp"
+            android:paddingBottom="@dimen/_5pxv"
+            android:paddingEnd="@dimen/_18pxh"
+            android:paddingStart="@dimen/_19pxh"
+            android:paddingTop="@dimen/_5pxv" android:singleLine="true"
+            android:text="@{pencarianRowModel.txtGroup36710}"
+            style="@style/txtRoundedOutline" tools:text="@string/lbl_wortel"/>
+    </LinearLayout>
+</layout>

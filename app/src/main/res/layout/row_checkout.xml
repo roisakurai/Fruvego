@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="checkoutRowModel" type="com.paniroisapplication.app.modules.checkout.data.model.CheckoutRowModel"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnrpcounter"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical" style="@style/groupStylecornerRadius_2">
+        <ImageView android:id="@+id/imageImageThree"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_74pxh"
+            android:layout_width="@dimen/_74pxh"
+            android:scaleType="fitXY" cornerRadius="@{@dimen/_8pxh}"
+            imageRes="@{@drawable/img_image2}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_image2"/>
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtRpCounter"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_4pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{checkoutRowModel.txtRpCounter}"
+            style="@style/txtIntersemibold10" tools:text="@string/lbl_rp_30_000"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtJumlahCounter"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_3pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{checkoutRowModel.txtJumlahCounter}"
+            style="@style/txtInterregular8" tools:text="@string/lbl_jumlah_1"/>
+    </LinearLayout>
+</layout>

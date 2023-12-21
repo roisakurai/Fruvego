@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="landingPageTwoVM" type="com.paniroisapplication.app.modules.landingpagetwo.data.viewmodel.LandingPageTwoVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearLandingPageTw"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_4">
+        <FrameLayout android:id="@+id/frameStacksegarcepat"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_314pxv"
+            android:layout_marginEnd="@dimen/_22pxh"
+            android:layout_marginStart="@dimen/_22pxh"
+            android:layout_marginTop="@dimen/_147pxv" android:layout_width="@dimen/_294pxh">
+            <TextView android:ellipsize="end"
+                android:gravity="top|start"
+                android:id="@+id/txtSegarcepat"
+                android:layout_gravity="bottom|center"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_61pxh"
+                android:layout_marginStart="@dimen/_61pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{landingPageTwoVM.landingPageTwoModel.txtSegarcepat}"
+                style="@style/txtInterbold24" tools:text="@string/lbl_segar_cepat"/>
+            <ImageView android:id="@+id/imageDdwbOne"
+                android:layout_gravity="top|start"
+                android:layout_height="@dimen/_294pxv"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_ddwb1}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_ddwb1"/>
+        </FrameLayout>
+        <TextView android:gravity="center_horizontal"
+            android:id="@+id/txtDescription"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_22pxh"
+            android:layout_marginStart="@dimen/_22pxh"
+            android:layout_marginTop="@dimen/_12pxv"
+            android:layout_width="match_parent"
+            android:text="@{landingPageTwoVM.landingPageTwoModel.txtDescription}"
+            style="@style/txtInterlight14" tools:text="@string/msg_produk_segar_ya"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnLogin"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_40pxv"
+            android:layout_marginEnd="@dimen/_22pxh"
+            android:layout_marginStart="@dimen/_22pxh"
+            android:layout_marginTop="@dimen/_107pxv"
+            android:layout_width="@dimen/_190pxh"
+            android:paddingBottom="@dimen/_11pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_11pxv" android:singleLine="true"
+            android:text="@string/lbl_login" android:textAllCaps="false"
+            style="@style/btnSolidRounded" tools:text="@string/lbl_login"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnDaftar"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_40pxv"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_22pxh"
+            android:layout_marginStart="@dimen/_22pxh"
+            android:layout_marginTop="@dimen/_28pxv"
+            android:layout_width="@dimen/_190pxh"
+            android:paddingBottom="@dimen/_11pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_11pxv" android:singleLine="true"
+            android:text="@string/lbl_daftar"
+            android:textAllCaps="false" style="@style/btnRoundedOutline" tools:text="@string/lbl_daftar"/>
+    </LinearLayout>
+</layout>

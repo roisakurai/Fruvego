@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="imageSliderSliderrectangle189Model" type="com.paniroisapplication.app.modules.homelocation.data.model.ImageSliderSliderrectangle189Model"/>
+    </data>
+    <ImageView android:id="@+id/imageRectangle189"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" android:scaleType="fitXY"
+        cornerRadius="@{@dimen/_10pxh}"
+        imageUrl="@{imageSliderSliderrectangle189Model.imageRectangle189}"
+        placeHolder="@{@drawable/image_not_found}"
+        tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle189"/>
+</layout>

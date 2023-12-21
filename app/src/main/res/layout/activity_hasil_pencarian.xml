@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="hasilPencarianVM" type="com.paniroisapplication.app.modules.hasilpencarian.data.viewmodel.HasilPencarianVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnarrowdown"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_14pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar
+            android:gravity="center_horizontal"
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_15pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout android:id="@+id/linearRowarrowdown"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <FrameLayout android:id="@+id/frameStackarrowdown"
+                    android:layout_height="@dimen/_14pxv"
+                    android:layout_marginBottom="@dimen/_13pxv"
+                    android:layout_marginTop="@dimen/_11pxv" android:layout_width="@dimen/_20pxh">
+                    <ImageView android:id="@+id/imageArrowdown"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_14pxh"
+                        android:layout_width="@dimen/_20pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_arrowdown"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_arrowdown"/>
+                    <FrameLayout
+                        android:id="@+id/frameStackarrowdownOne"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_14pxv" android:layout_width="@dimen/_20pxh">
+                        <ImageView android:id="@+id/imageArrowdownOne"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_14pxh"
+                            android:layout_width="@dimen/_20pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_arrowdown"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_arrowdown"/>
+                        <ImageView android:id="@+id/imageArrowdownTwo"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_14pxh"
+                            android:layout_width="@dimen/_20pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_arrowdown"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_arrowdown"/>
+                    </FrameLayout>
+                </FrameLayout>
+                <LinearLayout android:id="@+id/linearSearch"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_17pxh"
+                    android:layout_weight="0.93"
+                    android:layout_width="0dp"
+                    android:orientation="horizontal" style="@style/groupStylewhite_1">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtSearch"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_7pxv"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_marginTop="@dimen/_11pxv"
+                        android:layout_weight="0.69"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{hasilPencarianVM.hasilPencarianModel.txtSearch}"
+                        style="@style/txtInterregular16_1" tools:text="@string/lbl_jeruk_orange"/>
+                    <ImageView android:id="@+id/imageSearchOne"
+                        android:layout_height="@dimen/_39pxh"
+                        android:layout_marginStart="@dimen/_121pxh"
+                        android:layout_width="@dimen/_46pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_search_green_a700"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_search_green_a700"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnrectangle194"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_23pxv"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <LinearLayout android:id="@+id/linearColumnmedia"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_20pxh"
+                android:layout_marginStart="@dimen/_20pxh"
+                android:layout_width="wrap_content"
+                android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+                <FrameLayout android:id="@+id/frameStackmedia"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_119pxv" android:layout_width="@dimen/_150pxh">
+                    <ImageView android:id="@+id/imageMedia"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_119pxh"
+                        android:layout_width="@dimen/_150pxh"
+                        android:scaleType="fitXY"
+                        cornerRadius="@{@dimen/_8pxh}"
+                        imageRes="@{@drawable/img_media}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_media"/>
+                    <LinearLayout android:id="@+id/linearColumnhabis"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical" style="@style/groupStylegray_600_b5cornerRadius">
+                        <TextView android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:id="@+id/txtHABIS"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/_50pxv"
+                            android:layout_marginEnd="@dimen/_49pxh"
+                            android:layout_marginStart="@dimen/_50pxh"
+                            android:layout_marginTop="@dimen/_48pxv"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{hasilPencarianVM.hasilPencarianModel.txtHABIS}"
+                            style="@style/txtInterbold16" tools:text="@string/lbl_habis"/>
+                    </LinearLayout>
+                </FrameLayout>
+                <TextView android:ellipsize="end"
+                    android:gravity="start"
+                    android:id="@+id/txtJerukOrange"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_13pxh"
+                    android:layout_marginStart="@dimen/_13pxh"
+                    android:layout_marginTop="@dimen/_9pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{hasilPencarianVM.hasilPencarianModel.txtJerukOrange}"
+                    style="@style/txtInterbold12" tools:text="@string/lbl_jeruk_orange"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtWeight"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_13pxh"
+                    android:layout_marginStart="@dimen/_13pxh"
+                    android:layout_marginTop="@dimen/_3pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{hasilPencarianVM.hasilPencarianModel.txtWeight}"
+                    style="@style/txtInterregular10" tools:text="@string/lbl_1_kg"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtRpCounter"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_13pxh"
+                    android:layout_marginStart="@dimen/_13pxh"
+                    android:layout_marginTop="@dimen/_15pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{hasilPencarianVM.hasilPencarianModel.txtRpCounter}"
+                    style="@style/txtInterbold12" tools:text="@string/lbl_rp_15_000"/>
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearRowstarone"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_15pxv"
+                    android:layout_marginEnd="@dimen/_13pxh"
+                    android:layout_marginStart="@dimen/_13pxh"
+                    android:layout_marginTop="@dimen/_2pxv"
+                    android:layout_width="wrap_content" android:orientation="horizontal">
+                    <ImageView android:id="@+id/imageStarOne"
+                        android:layout_height="@dimen/_10pxh"
+                        android:layout_marginBottom="@dimen/_1pxv"
+                        android:layout_width="@dimen/_10pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_star1_11"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_star1_11"/>
+                    <ImageView android:id="@+id/imageStarTwo"
+                        android:layout_height="@dimen/_10pxh"
+                        android:layout_marginBottom="@dimen/_1pxv"
+                        android:layout_marginStart="@dimen/_2pxh"
+                        android:layout_width="@dimen/_10pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_star2_11"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_star2_11"/>
+                    <ImageView android:id="@+id/imageStarThree"
+                        android:layout_height="@dimen/_10pxh"
+                        android:layout_marginBottom="@dimen/_1pxv"
+                        android:layout_marginStart="@dimen/_2pxh"
+                        android:layout_width="@dimen/_10pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_star3_11"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_star3_11"/>
+                    <ImageView android:id="@+id/imageStarFive"
+                        android:layout_height="@dimen/_10pxh"
+                        android:layout_marginBottom="@dimen/_1pxv"
+                        android:layout_marginStart="@dimen/_2pxh"
+                        android:layout_width="@dimen/_10pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_star5_11"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_star5_11"/>
+                    <FrameLayout android:id="@+id/frameStackstarfour"
+                        android:layout_height="@dimen/_10pxv"
+                        android:layout_marginBottom="@dimen/_1pxv"
+                        android:layout_marginStart="@dimen/_2pxh" android:layout_width="@dimen/_10pxh">
+                        <ImageView android:id="@+id/imageStarFour"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_10pxh"
+                            android:layout_width="@dimen/_10pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_star4_11"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_star4_11"/>
+                        <ImageView android:id="@+id/imageContrast"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_10pxh"
+                            android:layout_width="@dimen/_10pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_contrast"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_contrast"/>
+                    </FrameLayout>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txt500terjual"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_weight="0.47"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{hasilPencarianVM.hasilPencarianModel.txt500terjual}"
+                        style="@style/txtInterregular8_1" tools:text="@string/lbl_500_terjual"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/bluegray_102"
+                android:id="@+id/viewRectangle194"
+                android:layout_height="@dimen/_10pxv"
+                android:layout_marginTop="@dimen/_33pxv" android:layout_width="@dimen/_360pxh"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtProdukSejenis"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_15pxh"
+                android:layout_marginStart="@dimen/_15pxh"
+                android:layout_marginTop="@dimen/_20pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{hasilPencarianVM.hasilPencarianModel.txtProdukSejenis}"
+                style="@style/txtIntersemibold14" tools:text="@string/msg_produk_sejenis"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:gravity="center_horizontal"
+                android:id="@+id/recyclerGridmediaOne"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_15pxh"
+                android:layout_marginStart="@dimen/_15pxh"
+                android:layout_marginTop="@dimen/_18pxv"
+                android:layout_width="match_parent"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="2" itemSpace="@{@dimen/_20pxh}"
+                tools:itemCount="4" tools:listitem="@layout/row_gridmedia_one"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

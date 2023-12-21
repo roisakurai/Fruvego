@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="resepRowModel" type="com.paniroisapplication.app.modules.resep.data.model.ResepRowModel"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnresepbalinese"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+        <ImageView android:id="@+id/imageImageTwentyTwo"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_138pxh"
+            android:layout_width="@dimen/_340pxh"
+            android:scaleType="fitXY" cornerRadius="@{@dimen/_15pxh}"
+            imageRes="@{@drawable/img_image22_138x340}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_image22_138x340"/>
+        <TextView android:gravity="center_horizontal"
+            android:id="@+id/txtResepBalinese"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_13pxv"
+            android:layout_width="match_parent"
+            android:text="@{resepRowModel.txtResepBalinese}"
+            style="@style/txtInterbold12" tools:text="@string/msg_resep_balinese"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtOlehFruvego"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_15pxv"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_9pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{resepRowModel.txtOlehFruvego}"
+            style="@style/txtInterregular10" tools:text="@string/lbl_oleh_fruvego"/>
+    </LinearLayout>
+</layout>

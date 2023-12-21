@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="locationSettingsTwoVM" type="com.paniroisapplication.app.modules.locationsettingstwo.data.viewmodel.LocationSettingsTwoVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearLocationSettin"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <FrameLayout android:gravity="start"
+            android:id="@+id/frameStackscreenshot2023"
+            android:layout_height="@dimen/_650pxv" android:layout_width="match_parent">
+            <ImageView android:id="@+id/imageScreenshot2023"
+                android:layout_gravity="start"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_screenshot2023}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_screenshot2023"/>
+            <LinearLayout android:id="@+id/linearColumnlinkedin"
+                android:layout_gravity="bottom|end"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20pxv"
+                android:layout_marginEnd="@dimen/_15pxh"
+                android:layout_marginStart="@dimen/_15pxh"
+                android:layout_marginTop="@dimen/_20pxv"
+                android:layout_width="wrap_content" android:orientation="vertical">
+                <ImageView android:id="@+id/imageLinkedin"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_44pxh"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_width="@dimen/_38pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_linkedin"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_linkedin"/>
+                <ImageButton
+                    android:background="@drawable/rectangle_bg_white_a700_border_green_a700_radius_20"
+                    android:id="@+id/btnGroup36758"
+                    android:layout_gravity="end"
+                    android:layout_height="@dimen/_40pxh"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_243pxv"
+                    android:layout_width="@dimen/_40pxh"
+                    android:paddingHorizontal="@dimen/_5pxh"
+                    android:paddingVertical="@dimen/_5pxv"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/img_group36758" tools:ignore="ContentDescription"/>
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearRowkemirimuka"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_15pxh"
+            android:layout_marginStart="@dimen/_15pxh"
+            android:layout_marginTop="@dimen/_20pxv"
+            android:layout_width="match_parent"
+            android:orientation="horizontal" style="@style/groupStylecornerRadius">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearColumnkemirimuka"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_9pxv"
+                android:layout_marginStart="@dimen/_15pxh"
+                android:layout_marginTop="@dimen/_11pxv"
+                android:layout_weight="0.92" android:layout_width="0dp" android:orientation="vertical">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtKemiriMuka"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{locationSettingsTwoVM.locationSettingsTwoModel.txtKemiriMuka}"
+                    style="@style/txtIntersemibold10" tools:text="@string/lbl_kemiri_muka"/>
+                <TextView android:id="@+id/txtDescription"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_8pxv"
+                    android:layout_width="match_parent"
+                    android:text="@{locationSettingsTwoVM.locationSettingsTwoModel.txtDescription}"
+                    style="@style/txtInterregular10_1" tools:text="@string/msg_jl_margonda_k"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/imageSearch"
+                android:layout_height="@dimen/_24pxh"
+                android:layout_marginBottom="@dimen/_23pxv"
+                android:layout_marginEnd="@dimen/_15pxh"
+                android:layout_marginTop="@dimen/_23pxv"
+                android:layout_width="@dimen/_24pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_search"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_search"/>
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnGunakanLokasi"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_18pxv"
+            android:layout_marginEnd="@dimen/_15pxh"
+            android:layout_marginStart="@dimen/_15pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_3pxh"
+            android:paddingBottom="@dimen/_8pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_8pxv" android:singleLine="true"
+            android:text="@string/lbl_gunakan_lokasi"
+            android:textAllCaps="false" style="@style/btnSolidRounded_2" tools:text="@string/lbl_gunakan_lokasi"/>
+    </LinearLayout>
+</layout>

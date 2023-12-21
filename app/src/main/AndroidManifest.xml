@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.paniroisapplication.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.paniroisapplication.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.paniroisapplication.app.modules.pesananselesai.ui.PesananSelesaiActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.paniroisapplication.app.modules.detailresep.ui.DetailResepActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.paniroisapplication.app.modules.registerone.ui.RegisterOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.paniroisapplication.app.modules.hasilpencarian.ui.HasilPencarianActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true"
+            android:name="com.paniroisapplication.app.modules.landingpageone.ui.LandingPageOneActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.paniroisapplication.app.modules.halamanproduk.ui.HalamanProdukActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.paniroisapplication.app.modules.otp.ui.OtpActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.paniroisapplication.app.modules.logindengannohp.ui.LoginDenganNoHpActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.paniroisapplication.app.modules.homelocationcontainer.ui.HomeLocationContainerActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.paniroisapplication.app.modules.locationsettingstwo.ui.LocationSettingsTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.paniroisapplication.app.modules.keranjang.ui.KeranjangActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.paniroisapplication.app.modules.keranjangone.ui.KeranjangOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.paniroisapplication.app.modules.landingpagetwo.ui.LandingPageTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.paniroisapplication.app.modules.checkout.ui.CheckoutActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.paniroisapplication.app.modules.homelocationtwo.ui.HomeLocationTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.paniroisapplication.app.modules.halamanprodukone.ui.HalamanProdukOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.paniroisapplication.app.modules.kategori.ui.KategoriActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.paniroisapplication.app.modules.pencarian.ui.PencarianActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.paniroisapplication.app.modules.locationsettingsone.ui.LocationSettingsOneActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

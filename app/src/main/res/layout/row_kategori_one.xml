@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="kategoriOneRowModel" type="com.paniroisapplication.app.modules.kategorione.data.model.KategoriOneRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearColumnmedia"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+        <ImageView android:id="@+id/imageMedia"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_119pxh"
+            android:layout_width="@dimen/_150pxh"
+            android:scaleType="fitXY" cornerRadius="@{@dimen/_8pxh}"
+            imageRes="@{@drawable/img_media_9}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_media_9"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtProdukLokal"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_13pxh"
+            android:layout_marginStart="@dimen/_13pxh"
+            android:layout_marginTop="@dimen/_9pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{kategoriOneRowModel.txtProdukLokal}"
+            style="@style/txtInterregular10" tools:text="@string/lbl_produk_lokal"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtSayurSop"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_13pxh"
+            android:layout_marginStart="@dimen/_13pxh"
+            android:layout_marginTop="@dimen/_2pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{kategoriOneRowModel.txtSayurSop}"
+            style="@style/txtInterbold14" tools:text="@string/lbl_sayur_sop"/>
+        <Spinner android:gravity="start"
+            android:id="@+id/spinnerPorsiCounter"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_13pxh"
+            android:layout_marginStart="@dimen/_13pxh"
+            android:layout_marginTop="@dimen/_4pxv"
+            android:layout_width="match_parent" tools:listitem="@layout/spinner_item"/>
+        <TextView android:ellipsize="end" android:gravity="start"
+            android:id="@+id/txtRp14000Pack"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_16pxv"
+            android:layout_marginEnd="@dimen/_13pxh"
+            android:layout_marginStart="@dimen/_13pxh"
+            android:layout_marginTop="@dimen/_14pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{kategoriOneRowModel.txtRp14000Pack}"
+            style="@style/txtInterbold10" tools:text="@string/lbl_rp_14_000_pack"/>
+    </LinearLayout>
+</layout>

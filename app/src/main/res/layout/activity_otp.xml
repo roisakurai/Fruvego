@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="otpVM" type="com.paniroisapplication.app.modules.otp.data.viewmodel.OtpVM"/>
+    </data>
+    <LinearLayout android:gravity="start" android:id="@+id/linearOTP"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <ImageView android:id="@+id/imageArrowdown"
+            android:layout_height="@dimen/_15pxh"
+            android:layout_marginEnd="@dimen/_22pxh"
+            android:layout_marginStart="@dimen/_22pxh"
+            android:layout_marginTop="@dimen/_27pxv"
+            android:layout_width="@dimen/_22pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_arrowdown"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_arrowdown"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtVerifikasiakun"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_31pxv"
+            android:layout_width="wrap_content"
+            android:lineSpacingExtra="@dimen/_6pxh"
+            android:singleLine="true"
+            android:text="@{otpVM.otpModel.txtVerifikasiakun}"
+            style="@style/txtInterbold24" tools:text="@string/lbl_verifikasi_akun"/>
+        <TextView android:id="@+id/txtMasukkanpinFour"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_11pxv"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_8pxh"
+            android:text="@{otpVM.otpModel.txtMasukkanpinFour}"
+            style="@style/txtInterregular14_1" tools:text="@string/msg_masukkan_pin_4"/>
+        <com.mukesh.OtpView android:focusableInTouchMode="true"
+            android:id="@+id/otpViewOtpview" android:inputType="number"
+            android:itemBackground="@color/white_A700"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_19pxh"
+            android:layout_marginStart="@dimen/_19pxh"
+            android:layout_marginTop="@dimen/_22pxv"
+            android:layout_width="wrap_content" app:OtpItemCount="4"
+            app:OtpItemHeight="@dimen/_48pxv"
+            app:OtpItemSpacing="@dimen/_8pxh"
+            app:OtpItemWidth="@dimen/_48pxh"
+            app:OtpLineColor="@color/gray_301" app:OtpViewType="rectangle"/>
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtBelummenerima"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_19pxh"
+            android:layout_marginStart="@dimen/_19pxh"
+            android:layout_marginTop="@dimen/_26pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{otpVM.otpModel.txtBelummenerima}"
+            style="@style/txtLatomedium12" tools:text="@string/msg_belum_menerima"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnDaftar"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_19pxh"
+            android:layout_marginStart="@dimen/_19pxh"
+            android:layout_marginTop="@dimen/_67pxv"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_4pxh"
+            android:paddingBottom="@dimen/_14pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_14pxv" android:singleLine="true"
+            android:text="@string/lbl_daftar"
+            android:textAllCaps="false" style="@style/btnSolidRounded_1" tools:text="@string/lbl_daftar"/>
+    </LinearLayout>
+</layout>

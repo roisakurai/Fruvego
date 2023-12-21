@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="locationSettingsOneVM" type="com.paniroisapplication.app.modules.locationsettingsone.data.viewmodel.LocationSettingsOneVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameLocationSettin"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <LinearLayout android:id="@+id/linearColumnarrowdown"
+            android:layout_gravity="top|start"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginTop="@dimen/_26pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarToolbar"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_22pxh"
+                android:layout_marginStart="@dimen/_22pxh"
+                android:layout_width="match_parent" app:contentInsetStart="0dp">
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearRowarrowdown"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <ImageView android:id="@+id/imageArrowdown"
+                        android:layout_height="@dimen/_15pxh"
+                        android:layout_marginBottom="@dimen/_5pxv"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_width="@dimen/_22pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_arrowdown"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_arrowdown"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtPilihAlamatPe"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_14pxh"
+                        android:layout_weight="0.9"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{locationSettingsOneVM.locationSettingsOneModel.txtPilihAlamatPe}"
+                        style="@style/txtIntersemibold18" tools:text="@string/msg_pilih_alamat_pe"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <androidx.appcompat.widget.SearchView
+                android:background="@drawable/rectangle_bg_white_a700_border_bluegray_101_radius_10"
+                android:gravity="center_horizontal"
+                android:id="@+id/searchViewSearch"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_19pxh"
+                android:layout_marginStart="@dimen/_19pxh"
+                android:layout_marginTop="@dimen/_17pxv"
+                android:layout_width="match_parent"
+                android:theme="@style/searchViewSearch"
+                app:iconifiedByDefault="false"
+                app:queryBackground="@android:color/transparent"
+                app:queryHint="@string/msg_tulis_kota_keca" app:searchIcon="@drawable/img_search"/>
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowmylocation"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_19pxh"
+                android:layout_marginStart="@dimen/_19pxh"
+                android:layout_marginTop="@dimen/_15pxv"
+                android:layout_width="wrap_content" android:orientation="horizontal">
+                <ImageView android:id="@+id/imageMyLocation"
+                    android:layout_height="@dimen/_20pxh"
+                    android:layout_width="@dimen/_20pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_mylocation"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_mylocation"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtGunakanLokasi"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_2pxv"
+                    android:layout_marginStart="@dimen/_11pxh"
+                    android:layout_marginTop="@dimen/_2pxv"
+                    android:layout_weight="0.87"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{locationSettingsOneVM.locationSettingsOneModel.txtGunakanLokasi}"
+                    style="@style/txtInterregular12" tools:text="@string/msg_gunakan_lokasi"/>
+            </LinearLayout>
+            <View android:background="@color/bluegray_102"
+                android:id="@+id/viewRectangle194"
+                android:layout_height="@dimen/_10pxv"
+                android:layout_marginTop="@dimen/_14pxv" android:layout_width="@dimen/_360pxh"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>
